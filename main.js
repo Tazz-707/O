@@ -698,12 +698,4 @@ document.addEventListener('DOMContentLoaded', function() {
             // تهيئة اللعبة
             window.GameManager = GameManager;
             GameManager.init();
-            // طريقة 1: مسح بيانات اللعبة فقط
-localStorage.removeItem('worldStrategyPlayers');
-
-// طريقة 2: مسح كل البيانات المؤقتة في المتوقع
-localStorage.clear();
-
-// طريقة 3: عرض عدد اللاعبين الحاليين
-console.log('عدد اللاعبين المسجلين:', JSON.parse(localStorage.getItem('worldStrategyPlayers') || '{}').length);
         });
